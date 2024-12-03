@@ -1,0 +1,56 @@
+/* https://github.com/ant-design/cssinjs */
+
+@layer tailwind-base, antd;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 22 119 225;
+    --color-success: 82 196 26;
+    --color-warning: 250 173 20;
+    --color-error: 255 26 29;
+
+    --color-bg-default: 255 255 255;
+    --color-bg-header: 255 255 255;
+    --color-bg-sidebar: 255 255 255;
+
+    --color-text-default: 17 24 39;
+    --color-text-reverse: 255 255 255;
+    --color-text-header: 107 114 128;
+    --color-text-sidebar: 156 163 175;
+    --color-text-verticalmenu: 75 85 99;
+
+    --color-border-default: 243 244 246;
+
+    --color-ring-default: 255 255 255;
+
+    --color-gradient-page-from: 249 250 251;
+    --color-gradient-page-to: 226 232 240;
+  }
+
+  :root[class~="dark"] {
+    --color-primary: 235 133 0;
+
+    --color-bg-default: 24 36 51;
+    --color-bg-header: transparent;
+    --color-bg-sidebar: transparent;
+
+    --color-text-default: 226 232 240; /* slate 200 */
+    --color-text-reverse: 255 255 255; /* white */
+    --color-text-header: 203 213 225; /* slate 300 */
+    --color-text-sidebar: 148 163 184; /* slate 400 */
+    --color-text-verticalmenu: 203 213 225; /* slate 300 */
+
+    --color-border-default: 31 41 55; /* gray 800 */
+
+    --color-ring-default: 31 41 55; /* gray 800 */
+
+    --color-gradient-page-from: 17 31 37;
+    --color-gradient-page-to: 10 10 10;
+  }
+}
